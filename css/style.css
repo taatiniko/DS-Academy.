@@ -1,0 +1,78 @@
+body {
+   background: #ffffff; /*цвет фона страницы*/
+}
+.contact_form {
+    position: fixed; /*положение относительно браузера*/
+    width: 481px; /*ширина*/
+    height: 392px; /*высота*/
+    top: 50%; /*расстояние от верхнего края*/
+    transform: translate(100%, -50%); /*расположение по центру*/
+    background-color: #f7f5f9; /*цвет фона формы*/
+    border-radius: 12px; /*закругление углов формы*/
+    box-shadow: 4px 7px 10px 7px rgba(0, 0, 0, 0.07); /*тень; p.s. указанные в дизайне параметры тени не получось корректно изобразить*/
+}
+
+.header_title {
+    width: 168px;
+    height: 20px;
+    margin: 40px 273px 0px 40px; /*отступ от краев формы*/
+    font-family: "Roboto", sans-serif; /*шрифт*/
+    line-height: 20px; /*межстрочный интервал*/
+    font-size: 24px; /*размер шрифта*/
+    font-weight: 700; /*насыщенность шрифта - полужирный*/
+    white-space: nowrap; /*текст без переноса*/
+    color: #3b3d43; /*цвет шрифта*/
+    display: block; /*?блочный элемент*/
+}
+.form_inputs [type="text"],.form_inputs [type="tel"],.form_inputs [type="email"] {
+    padding: 14px 35.12px 14px 15px; /*расстояние полей ввода относительно формы*/
+    display: block;
+    width: 350.88px ;
+    height: 20px;
+    box-shadow: 4px 7px 30px 1px rgba(0, 0, 0, 0.07);
+    background: #fff;
+    outline: none; /*граница полей ввода отсутствует*/
+    font-size: 15px;
+    font-weight: 100;
+    line-height: 20px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal; /*начертание шрифта*/
+    color: rgba(208, 201, 214, 1);
+    float: left; /*выравнивание по левому краю*/
+    border-width: 0px; /*толщина границы; p.s без данного свойства не получается настроить интерактивные элменты с реакцией на состояние*/
+    border-radius: 12px;
+    margin: 25px 40px 0px 40px;
+}
+.button_block [type="submit"] {
+    background: #6979F8;
+    width: 401px;
+    height: 48px;
+    border-radius: 6px;
+    font-family: 'Roboto', sans-serif;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 400;
+    background: rgba(105, 121, 248, 1);
+    padding: 13px 116px 13px 116px;
+    border-width: 0px;
+    display: block;
+    cursor: pointer; /*замена курсора на кнопке отправки*/
+    font-size: 17px;
+    line-height: 22px;
+    outline: none;
+    float: right;
+    margin: 25px 40px 40px 40px;
+}
+
+input:hover {
+    border-color: #854FC8 !important;
+    border-width: 1px !important;
+    box-shadow: none;
+    border-radius: none;
+} /*реакция на состояние - наведение*/
+input:focus {
+    border-color: #854FC8 !important;
+    border-width: 1px !important;
+    box-shadow: none;
+    border-radius: none;
+}
+/*реакция на состояние - фокус*/
